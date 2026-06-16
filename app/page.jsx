@@ -12,11 +12,11 @@ export default function Home() {
            COLOR IDENTITY — your palette. Edit these to reskin.
            ============================================================ */
         .portfolio {
-          --bg:     #3C4330;  /* deep moss green   */
-          --ink:    #EDE7DB;  /* egg shell text    */
-          --accent: #D8C9AE;  /* warm tan links    */
-          --soft:   #6E7450;  /* olive highlight   */
-          --line:   #565E40;  /* muted green rule  */
+          --bg:     #DDCCB7;  /* linen tan       */
+          --ink:    #4D342D;  /* mahogany text   */
+          --accent: #5E6347;  /* deep moss links */
+          --soft:   #9B9879;  /* olive highlight */
+          --line:   #9B9879;  /* olive rule      */
           --muted:  color-mix(in srgb, var(--ink) 58%, var(--bg)); /* soft text */
 
           background: var(--bg);
