@@ -1,6 +1,8 @@
 // Save this as: src/app/page.tsx  (replace everything currently in that file)
-// Fonts load automatically from Google Fonts. The Seasons is used if you've
-// activated it via Adobe Fonts; otherwise it falls back to Playfair Display.
+//
+// TO ADD A PROJECT IMAGE: drop a screenshot into the `public/` folder
+// (e.g. public/project1.png), then inside a .project-media below replace
+// the <span> placeholder with:   <img src="/project1.png" alt="..." />
 
 export default function Home() {
   return (
@@ -9,15 +11,17 @@ export default function Home() {
         @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Pinyon+Script&display=swap');
 
         /* ============================================================
-           COLOR IDENTITY — your palette. Edit these to reskin.
+           COLOR IDENTITY — if you already changed these five lines,
+           paste your version back over them.
            ============================================================ */
         .portfolio {
-          --bg:     #DDCCB7;  /* linen tan       */
-          --ink:    #4D342D;  /* mahogany text   */
-          --accent: #5E6347;  /* deep moss links */
-          --soft:   #9B9879;  /* olive highlight */
-          --line:   #9B9879;  /* olive rule      */
-          --muted:  color-mix(in srgb, var(--ink) 58%, var(--bg)); /* soft text */
+          --bg:     #EDE7DB;  /* Egg Shell — background      */
+          --ink:    #4D342D;  /* Mahogany  — primary text    */
+          --accent: #6A6A53;  /* Moss      — links & labels  */
+          --soft:   #9B9879;  /* Olive     — highlight swipe */
+          --line:   #DDCCB7;  /* Linen     — dividers        */
+          --muted:  color-mix(in srgb, var(--ink) 58%, var(--bg));
+          --card:   color-mix(in srgb, var(--line) 45%, var(--bg));
 
           background: var(--bg);
           color: var(--ink);
@@ -28,13 +32,12 @@ export default function Home() {
           -webkit-font-smoothing: antialiased;
         }
 
-        .wrap { max-width: 660px; margin: 0 auto; padding: 120px 28px 96px; }
+        .wrap { max-width: 820px; margin: 0 auto; padding: 110px 28px 96px; }
 
-        /* --- display type: The Seasons, falling back to Playfair Display --- */
         .portfolio h1 {
           font-family: "The Seasons", "Playfair Display", Georgia, serif;
           font-weight: 500;
-          font-size: clamp(46px, 9vw, 76px);
+          font-size: clamp(46px, 9vw, 78px);
           letter-spacing: -0.005em;
           line-height: 1.02;
           margin: 0 0 14px;
@@ -44,15 +47,14 @@ export default function Home() {
           font-size: 14px;
           letter-spacing: 0.14em;
           text-transform: uppercase;
-          margin: 0 0 30px;
+          margin: 0 0 28px;
         }
-        .intro { font-size: 21px; max-width: 50ch; margin: 0 0 36px; }
+        .intro { font-size: 22px; max-width: 50ch; margin: 0 0 34px; }
         .swipe {
           background: linear-gradient(transparent 60%, color-mix(in srgb, var(--soft) 60%, transparent) 60%);
           padding: 0 3px;
         }
 
-        /* --- links --- */
         .links { display: flex; flex-wrap: wrap; gap: 24px; }
         .portfolio a {
           color: var(--accent);
@@ -64,8 +66,8 @@ export default function Home() {
         .portfolio a:hover { border-color: var(--accent); }
         .portfolio a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
 
-        /* --- sections --- */
-        .section { margin-top: 74px; }
+        /* --- section headers --- */
+        .section { margin-top: 80px; }
         .eyebrow {
           font-family: "The Seasons", "Playfair Display", Georgia, serif;
           font-size: 15px;
@@ -73,24 +75,58 @@ export default function Home() {
           letter-spacing: 0.06em;
           text-transform: uppercase;
           color: var(--accent);
-          margin: 0 0 22px;
+          margin: 0 0 28px;
           padding-bottom: 12px;
           border-bottom: 1px solid var(--line);
         }
-        .about p { margin: 0 0 16px; max-width: 56ch; }
 
-        .entry { margin-bottom: 22px; }
-        .entry-top { display: flex; justify-content: space-between; gap: 16px; align-items: baseline; }
-        .entry-title { font-weight: 500; }
-        .entry-year { color: var(--muted); font-size: 15px; white-space: nowrap; }
-        .entry-sub { color: var(--muted); }
+        /* --- projects (the centerpiece) --- */
+        .project { margin-bottom: 60px; }
+        .project-media {
+          position: relative;
+          aspect-ratio: 16 / 10;
+          background:
+            radial-gradient(120% 120% at 30% 20%, color-mix(in srgb, var(--soft) 30%, var(--card)), var(--card));
+          border: 1px solid var(--line);
+          border-radius: 12px;
+          overflow: hidden;
+          margin-bottom: 18px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+        }
+        .project.featured .project-media { aspect-ratio: 16 / 9; }
+        .project-media img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .media-label {
+          color: var(--muted);
+          font-size: 14px;
+          letter-spacing: 0.08em;
+          text-transform: uppercase;
+        }
+        .project-head {
+          display: flex;
+          justify-content: space-between;
+          align-items: baseline;
+          gap: 16px;
+          margin-bottom: 6px;
+        }
+        .project-title {
+          font-family: "The Seasons", "Playfair Display", Georgia, serif;
+          font-size: 24px;
+          font-weight: 500;
+        }
+        .project.featured .project-title { font-size: 30px; }
+        .project-meta { color: var(--muted); font-size: 14px; white-space: nowrap; }
+        .project-desc { max-width: 60ch; margin-bottom: 10px; }
+        .project-links { display: flex; gap: 18px; font-size: 16px; }
 
-        .pub { margin-bottom: 20px; }
+        /* --- about (condensed, no CV list) --- */
+        .about p { max-width: 60ch; margin: 0 0 14px; }
+        .about .meta-line { color: var(--muted); font-size: 16px; }
+
+        /* --- publications (light, secondary) --- */
+        .pub { margin-bottom: 16px; font-size: 17px; }
         .pub .venue { color: var(--muted); font-style: italic; }
-
-        .proj { margin-bottom: 24px; }
-        .proj-name { font-weight: 500; margin-bottom: 2px; }
-        .proj-desc { color: var(--muted); font-size: 17px; max-width: 54ch; }
 
         .footer {
           margin-top: 84px;
@@ -104,21 +140,18 @@ export default function Home() {
           gap: 20px;
           flex-wrap: wrap;
         }
-        .sign {
-          font-family: "Pinyon Script", cursive;
-          font-size: 34px;
-          color: var(--accent);
-          line-height: 1;
-        }
+        .sign { font-family: "Pinyon Script", cursive; font-size: 34px; color: var(--accent); line-height: 1; }
 
-        /* --- entrance --- */
         .portfolio .wrap > * { animation: rise 0.6s ease both; }
         .portfolio .wrap > *:nth-child(2) { animation-delay: 0.05s; }
-        .portfolio .wrap > *:nth-child(3) { animation-delay: 0.1s; }
         @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
         @media (prefers-reduced-motion: reduce) { .portfolio .wrap > * { animation: none; } }
 
-        @media (max-width: 480px) { .wrap { padding-top: 84px; } }
+        @media (max-width: 600px) {
+          .wrap { padding-top: 80px; }
+          .project-head { flex-direction: column; gap: 2px; }
+          .project-meta { white-space: normal; }
+        }
       `}</style>
 
       <div className="wrap">
@@ -127,10 +160,8 @@ export default function Home() {
           <h1>Yara</h1>
           <p className="role">Researcher · Engineer · Paris</p>
           <p className="intro">
-            I&apos;m a researcher and engineer working on{" "}
-            <span className="swipe">[your research area]</span> — building [the
-            kind of systems you build] and turning them into things people can
-            actually use.
+            I build <span className="swipe">[the kind of systems you build]</span>{" "}
+            — [one line on what your work does and who it&apos;s for. Make it concrete.]
           </p>
           <nav className="links">
             <a href="mailto:[you@email.com]">Email</a>
@@ -140,61 +171,80 @@ export default function Home() {
           </nav>
         </header>
 
-        {/* ---------------- BACKGROUND ---------------- */}
+        {/* ---------------- SELECTED WORK ---------------- */}
+        <section className="section">
+          <p className="eyebrow">Selected Work</p>
+
+          <div className="project featured">
+            <div className="project-media">
+              <span className="media-label">[ add screenshot ]</span>
+            </div>
+            <div className="project-head">
+              <span className="project-title">[Featured project name]</span>
+              <span className="project-meta">[Your role] · 2025 · [Tools]</span>
+            </div>
+            <p className="project-desc">
+              [Two sentences: what it is, the problem it solves, and what you
+              actually built. Lead with the outcome, not the tech.]
+            </p>
+            <div className="project-links">
+              <a href="#">Live</a>
+              <a href="#">Code</a>
+              <a href="#">Paper</a>
+            </div>
+          </div>
+
+          <div className="project">
+            <div className="project-media">
+              <span className="media-label">[ add screenshot ]</span>
+            </div>
+            <div className="project-head">
+              <span className="project-title">[Project name]</span>
+              <span className="project-meta">[Your role] · 2024 · [Tools]</span>
+            </div>
+            <p className="project-desc">[One or two lines on what it is and what you did.]</p>
+            <div className="project-links">
+              <a href="#">Live</a>
+              <a href="#">Code</a>
+            </div>
+          </div>
+
+          <div className="project">
+            <div className="project-media">
+              <span className="media-label">[ add screenshot ]</span>
+            </div>
+            <div className="project-head">
+              <span className="project-title">[Project name]</span>
+              <span className="project-meta">[Your role] · 2023 · [Tools]</span>
+            </div>
+            <p className="project-desc">[One or two lines on what it is and what you did.]</p>
+            <div className="project-links">
+              <a href="#">Code</a>
+            </div>
+          </div>
+        </section>
+
+        {/* ---------------- ABOUT (condensed) ---------------- */}
         <section className="section about">
-          <p className="eyebrow">Background</p>
+          <p className="eyebrow">About</p>
           <p>
-            [Two or three sentences on who you are and what your work sits at
-            the intersection of. Plain — what you do, where, and why it matters.]
+            [Two or three sentences on who you are and what your work sits at the
+            intersection of. Plain — what you do and why it matters.]
           </p>
-          <div style={{ marginTop: 28 }}>
-            <div className="entry">
-              <div className="entry-top">
-                <span className="entry-title">[PhD candidate / your role]</span>
-                <span className="entry-year">2023 — present</span>
-              </div>
-              <div className="entry-sub">[Lab / University]</div>
-            </div>
-            <div className="entry">
-              <div className="entry-top">
-                <span className="entry-title">[MSc — Subject]</span>
-                <span className="entry-year">2022</span>
-              </div>
-              <div className="entry-sub">[University]</div>
-            </div>
-            <div className="entry">
-              <div className="entry-top">
-                <span className="entry-title">[BSc — Subject]</span>
-                <span className="entry-year">2020</span>
-              </div>
-              <div className="entry-sub">[University]</div>
-            </div>
-          </div>
+          <p className="meta-line">
+            Currently [role] at [Lab / Company]. Previously [one prior thing].
+            [BSc / MSc / PhD] — [universities].
+          </p>
         </section>
 
-        {/* ---------------- RESEARCH & PUBLICATIONS ---------------- */}
+        {/* ---------------- SELECTED PUBLICATIONS ---------------- */}
         <section className="section">
-          <p className="eyebrow">Research &amp; Publications</p>
+          <p className="eyebrow">Selected Publications</p>
           <div className="pub">
-            [Paper title goes here]. <span className="venue">[Venue / Journal]</span>, 2025.{" "}
-            <a href="#">PDF</a>
+            [Paper title]. <span className="venue">[Venue]</span>, 2025. <a href="#">PDF</a>
           </div>
           <div className="pub">
-            [Second paper title]. <span className="venue">[Venue / Workshop]</span>, 2024.{" "}
-            <a href="#">PDF</a>
-          </div>
-        </section>
-
-        {/* ---------------- PROJECTS ---------------- */}
-        <section className="section">
-          <p className="eyebrow">Projects</p>
-          <div className="proj">
-            <div className="proj-name">[Project name] · <a href="#">view</a></div>
-            <div className="proj-desc">[One line on what it is and what you did. Specific beats clever.]</div>
-          </div>
-          <div className="proj">
-            <div className="proj-name">[Project name] · <a href="#">view</a></div>
-            <div className="proj-desc">[One line on what it is and what you did.]</div>
+            [Second paper title]. <span className="venue">[Venue]</span>, 2024. <a href="#">PDF</a>
           </div>
         </section>
 
