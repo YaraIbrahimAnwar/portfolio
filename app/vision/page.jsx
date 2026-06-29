@@ -56,7 +56,7 @@ export default function Vision() {
           </p>
 
           <div className="figure"><img src="/seg_manuelle.png" alt="3D Slicer extension interface" /></div>
-          <p className="figcaption">A screenshot of the extension in action works well here.</p>
+          <p className="figcaption">A screenshot of the 3D Slicer extension in action.</p>
         </div>
 
         <footer className="footer">
