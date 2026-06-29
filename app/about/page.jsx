@@ -30,12 +30,9 @@ export default function About() {
             Before the PhD, I worked on medical image segmentation — training deep models for
             bile-duct MRI and building a 3D Slicer extension that streamlined the annotation
             workflow. I&apos;m also co-founder and CTO of Plunia, where I lead the technical side.
-            [Add a line about what Plunia does.]
+  
           </p>
-          <p>
-            [Optional: a sentence or two in your own voice — what draws you to this work, or
-            something more personal. Delete this if you&apos;d rather keep it strictly professional.]
-          </p>
+        
 
           <h2 className="h2">Education</h2>
           <ul className="cv-list">
@@ -64,7 +61,7 @@ export default function About() {
           </div>
 
           <h2 className="h2">Languages</h2>
-          <p className="meta-line">[French · English · add your languages here]</p>
+          <p className="meta-line">[French · English · Arabic · Spanish]</p>
         </div>
 
         <footer className="footer">
