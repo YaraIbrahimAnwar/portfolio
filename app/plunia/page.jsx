@@ -42,11 +42,10 @@ export default function Plunia() {
           </p>
 
           <h2 className="h2">Where it stands</h2>
-          <p>[Traction, milestones, pilots, awards — whatever you can point to.]</p>
 
           <div className="stats">
-            <div className="stat"><div className="stat-num">[ ]</div><div className="stat-label">[ milestone ]</div></div>
-            <div className="stat"><div className="stat-num">[ ]</div><div className="stat-label">[ milestone ]</div></div>
+            <div className="stat"><div className="stat-num">Patent filed</div><div className="stat-label">[ Core Interaction Layer ]</div></div>
+            <div className="stat"><div className="stat-num">ISIR - CNRS - Sorbonne Université </div><div className="stat-label"></div></div>
           </div>
         </div>
 
