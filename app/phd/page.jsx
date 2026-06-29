@@ -70,7 +70,7 @@ export default function PhD() {
             <span className="arrow">→</span>
             <span className="stage">Feature extraction</span>
             <span className="arrow">→</span>
-            <span className="stage">Self-supervised model</span>
+            <span className="stage">Machine Learning Classifier</span>
             <span className="arrow">→</span>
             <span className="stage">Diagnosis</span>
           </div>
