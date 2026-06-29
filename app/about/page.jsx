@@ -1,5 +1,5 @@
 // ABOUT PAGE — save as: app/about/page.jsx
-export const metadata = { title: "About — Yara Ibrahim Anwar Ahmed" };
+export const metadata = { title: "About — Yara Ibrahim" };
 
 export default function About() {
   return (

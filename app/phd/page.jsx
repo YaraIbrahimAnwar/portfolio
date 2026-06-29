@@ -45,7 +45,7 @@ export default function PhD() {
           <span>Python · PyTorch · wav2vec · HuBERT</span>
         </div>
 
-        <img className="figure" src="/spectrogram.png" alt="Spectrogram of a patient voice sample" />
+        <Spectrogram />
 
         <div className="prose">
           <h2 className="h2">The problem</h2>
