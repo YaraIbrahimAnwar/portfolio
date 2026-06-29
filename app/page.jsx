@@ -1,5 +1,6 @@
 // HOME PAGE — save as: app/page.jsx (replace everything)
 import Link from "next/link";
+import { SpectrogramTile, SegmentationTile, MixedRealityTile } from "./components/CardVisuals";
 
 export const metadata = {
   title: "Yara Ibrahim Anwar Ahmed",
@@ -33,7 +34,7 @@ export default function Home() {
             {/* Plunia */}
             <article className="project">
               <Link href="/plunia" className="media-link">
-                <div className="project-media"><span className="media-label">[ add image ]</span></div>
+              <div className="project-media"><MixedRealityTile /></div>
               </Link>
               <Link href="/plunia" className="project-title-link">Plunia</Link>
               <p className="project-meta">Co-founder &amp; CTO · 2025–present</p>
@@ -44,7 +45,7 @@ export default function Home() {
             {/* PhD */}
             <article className="project">
               <Link href="/phd" className="media-link">
-                <div className="project-media"><span className="media-label">[ spectrogram ]</span></div>
+              <div className="project-media"><SpectrogramTile /></div>
               </Link>
               <Link href="/phd" className="project-title-link">Voice biomarkers for neurological disorders.</Link>
               <p className="project-meta">PhD research · 2024–present</p>
@@ -57,7 +58,7 @@ export default function Home() {
             {/* Computer Vision internship */}
             <article className="project">
               <Link href="/vision" className="media-link">
-                <div className="project-media"><span className="media-label">[ add image ]</span></div>
+              <div className="project-media"><SegmentationTile /></div>
               </Link>
               <Link href="/vision" className="project-title-link">Bile-duct MRI segmentation</Link>
               <p className="project-meta">Research internship · 2024</p>
