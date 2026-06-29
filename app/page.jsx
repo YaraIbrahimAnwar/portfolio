@@ -36,8 +36,8 @@ export default function Home() {
                 <div className="project-media"><span className="media-label">[ add image ]</span></div>
               </Link>
               <Link href="/plunia" className="project-title-link">Plunia</Link>
-              <p className="project-meta">Co-founder &amp; CTO · 2024–present</p>
-              <p className="project-desc">[One line on what Plunia builds — fill this in.]</p>
+              <p className="project-meta">Co-founder &amp; CTO · 2025–present</p>
+              <p className="project-desc">At Plunia, we build InteractOR, a mixed reality software for healthcare.</p>
               <p className="project-links"><Link href="/plunia">View →</Link></p>
             </article>
 
@@ -46,7 +46,7 @@ export default function Home() {
               <Link href="/phd" className="media-link">
                 <div className="project-media"><span className="media-label">[ spectrogram ]</span></div>
               </Link>
-              <Link href="/phd" className="project-title-link">Voice biomarkers for liver disease</Link>
+              <Link href="/phd" className="project-title-link">Voice biomarkers for neurological disorders.</Link>
               <p className="project-meta">PhD research · 2024–present</p>
               <p className="project-desc">
                 Detecting minimal hepatic encephalopathy from voice alone — full audio pipeline, 80% accuracy.
