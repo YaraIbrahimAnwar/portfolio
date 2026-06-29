@@ -22,13 +22,28 @@ export default function Home() {
           <nav className="links">
             <a href="mailto:yara.ibrahim_anwar_ahmed@sorbonne-universite.fr">Email</a>
             <a href="https://www.linkedin.com/in/yara-ibrahim-anwar-ahmed/">LinkedIn</a>
-            <a href="https://github.com/YaraIbrahimAnwar">GitHub</a>
           </nav>
         </header>
 
         {/* ---------------- SELECTED WORK ---------------- */}
-        <section className="section">
+        <section className="section work">
+          
           <p className="eyebrow">Selected Work</p>
+
+          {/* Plunia */}
+          <div className="project">
+            <Link href="/plunia" className="media-link">
+              <div className="project-media"><span className="media-label">[ add screenshot ]</span></div>
+            </Link>
+            <div className="project-head">
+              <Link href="/plunia" className="project-title-link">Plunia</Link>
+              <span className="project-meta">Co-founder &amp; CTO · 2024–present</span>
+            </div>
+            <p className="project-desc">
+              [One line on what Plunia builds — fill this in.] I lead the technical side as co-founder and CTO.
+            </p>
+            <div className="project-links"><Link href="/plunia">View project →</Link></div>
+          </div>
 
           {/* PhD */}
           <div className="project featured">
@@ -46,6 +61,11 @@ export default function Home() {
             <div className="project-links"><Link href="/phd">View project →</Link></div>
           </div>
 
+          
+
+          
+
+
           {/* Computer Vision internship */}
           <div className="project">
             <Link href="/vision" className="media-link">
@@ -61,22 +81,11 @@ export default function Home() {
             </p>
             <div className="project-links"><Link href="/vision">View project →</Link></div>
           </div>
-
-          {/* Plunia */}
-          <div className="project">
-            <Link href="/plunia" className="media-link">
-              <div className="project-media"><span className="media-label">[ add screenshot ]</span></div>
-            </Link>
-            <div className="project-head">
-              <Link href="/plunia" className="project-title-link">Plunia</Link>
-              <span className="project-meta">Co-founder &amp; CTO · 2024–present</span>
-            </div>
-            <p className="project-desc">
-              [One line on what Plunia builds — fill this in.] I lead the technical side as co-founder and CTO.
-            </p>
-            <div className="project-links"><Link href="/plunia">View project →</Link></div>
-          </div>
+          
         </section>
+
+
+
 
         {/* ---------------- ABOUT ---------------- */}
         <section className="section about">

@@ -151,3 +151,25 @@ html, body { margin: 0; padding: 0; background: var(--bg); }
   .project-head { flex-direction: column; gap: 2px; }
   .project-meta { white-space: normal; }
 }
+
+/* ---- horizontal work grid ---- */
+.section.work {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px 28px;
+  align-items: start;
+}
+.section.work .eyebrow { grid-column: 1 / -1; }
+.section.work .project { margin-bottom: 0; }
+.section.work .project.featured { grid-column: 1 / -1; }
+.section.work .project-head {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+.section.work .project.featured .project-head {
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+@media (max-width: 600px) { .section.work { grid-template-columns: 1fr; } }
