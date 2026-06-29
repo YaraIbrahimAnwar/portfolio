@@ -22,7 +22,7 @@ export default function Vision() {
         </div>
 
         {/* You HAVE real images for this one — drop them in public/ and swap them in. */}
-        <div className="figure"><img src="/vision.png" alt="Bile-duct MRI segmentation result" /></div>
+        <div className="figure"><img src="/segmentation3d.png" alt="Manual 3D Slicer segmentation of the bile-duct" /></div>
         <p className="figcaption">
           Predicted contour with a side-by-side of the ground truth.
         </p>
