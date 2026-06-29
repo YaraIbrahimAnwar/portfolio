@@ -13,13 +13,12 @@ export default function Plunia() {
         <p className="eyebrow">Startup</p>
         <h1>Plunia</h1>
         <p className="lead">
-          [One or two sentences on what Plunia is and the problem it solves. Plain and concrete —
-          imagine an investor reading just this line.]
+          [Plunia is a deeptech startup that builds a mixed reality software for surgeons in minimally invasive surgery.]
         </p>
         <div className="meta-row">
           <span>Co-founder &amp; CTO</span>
-          <span>2024 — present</span>
-          <span>[Core tech / stack]</span>
+          <span>2025 — present</span>
+          <span>[Deeptech startup / Mixed reality software]</span>
         </div>
 
 
@@ -28,18 +27,18 @@ export default function Plunia() {
 
         <div className="prose">
           <h2 className="h2">What we&apos;re building</h2>
-          <p>[Plunia's InteractOR is a mixed reality software that allows surgeons to consult the patient's preoperative images, using instruments
+          <p> Plunia's InteractOR is a mixed reality software that allows surgeons to consult the patient's preoperative images, using instruments
             that they already master, and without having to leave the sterile field.
-            You can visit the Plunia website to learn more about the startup and our product .]</p>
+            You can visit the Plunia website to learn more about the startup and our product.</p>
 
-
+ 
           <p className="project-links">
           <a href="https://plunia.com/" target="_blank" rel="noopener noreferrer">Visit the Plunia website ↗</a>
           </p>
 
           <h2 className="h2">My role</h2>
           <p>
-            [As co-founder and CTO, I lead the technical direction of Plunia].
+            As co-founder and CTO, I lead the technical direction of Plunia.
           </p>
 
           <h2 className="h2">Where it stands</h2>
