@@ -22,7 +22,7 @@ export default function Plunia() {
           <span>[Core tech / stack]</span>
         </div>
 
-        <div className="figure"><span className="media-label">[ product / demo image ]</span></div>
+        <div className="figure"><img src="/interactor.png" alt="Plunia InteractOR" /></div>
         <p className="figcaption">A product shot, demo still, or logo lockup goes here.</p>
 
         <div className="prose">

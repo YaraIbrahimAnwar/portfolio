@@ -45,11 +45,7 @@ export default function PhD() {
           <span>Python · PyTorch · wav2vec · HuBERT</span>
         </div>
 
-        <Spectrogram />
-        <p className="figcaption">
-          A voice sample as a spectrogram — the kind of signal the models learn from.
-          (Generated placeholder; swap in spectrograms or result plots from your own work.)
-        </p>
+        <img className="figure" src="/spectrogram.png" alt="Spectrogram of a patient voice sample" />
 
         <div className="prose">
           <h2 className="h2">The problem</h2>

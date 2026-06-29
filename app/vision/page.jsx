@@ -22,7 +22,7 @@ export default function Vision() {
         </div>
 
         {/* You HAVE real images for this one — drop them in public/ and swap them in. */}
-        <div className="figure"><span className="media-label">[ segmentation result ]</span></div>
+        <div className="figure"><img src="/vision.png" alt="Bile-duct MRI segmentation result" /></div>
         <p className="figcaption">
           Replace with a real result: predicted contour over the MRI, or a side-by-side with ground truth.
           (Put the file in public/ and change this to &lt;img src=&quot;/segmentation.png&quot; /&gt;.)
@@ -56,7 +56,7 @@ export default function Vision() {
             workflow for the people actually using it.
           </p>
 
-          <div className="figure"><span className="media-label">[ 3D Slicer extension ]</span></div>
+          <div className="figure"><img src="/seg_manuelle.png" alt="3D Slicer extension interface" /></div>
           <p className="figcaption">A screenshot of the extension in action works well here.</p>
         </div>
 
