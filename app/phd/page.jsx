@@ -88,8 +88,7 @@ export default function PhD() {
           </div>
           <p>
             The baseline uses self-supervised audio models (wav2vec, HuBERT) on top of the pipeline.
-            [Add a confusion matrix, ROC curve, or feature-importance plot here when you have one —
-            those make strong visuals for audio work.]
+      
           </p>
         </div>
 

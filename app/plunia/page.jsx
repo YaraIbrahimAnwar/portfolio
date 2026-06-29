@@ -13,12 +13,12 @@ export default function Plunia() {
         <p className="eyebrow">Startup</p>
         <h1>Plunia</h1>
         <p className="lead">
-          [Plunia is a deeptech startup that builds a mixed reality software for surgeons in minimally invasive surgery.]
+          Plunia is a deeptech startup that builds a mixed reality software for surgeons in minimally invasive surgery.
         </p>
         <div className="meta-row">
           <span>Co-founder &amp; CTO</span>
           <span>2025 — present</span>
-          <span>[Deeptech startup / Mixed reality software]</span>
+          <span>Deeptech startup / Mixed reality software</span>
         </div>
 
 

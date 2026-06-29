@@ -24,8 +24,7 @@ export default function Vision() {
         {/* You HAVE real images for this one — drop them in public/ and swap them in. */}
         <div className="figure"><img src="/vision.png" alt="Bile-duct MRI segmentation result" /></div>
         <p className="figcaption">
-          Replace with a real result: predicted contour over the MRI, or a side-by-side with ground truth.
-          (Put the file in public/ and change this to &lt;img src=&quot;/segmentation.png&quot; /&gt;.)
+          Predicted contour with a side-by-side of the ground truth.
         </p>
 
         <div className="stats">
