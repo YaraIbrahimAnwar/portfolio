@@ -22,21 +22,24 @@ export default function Plunia() {
           <span>[Core tech / stack]</span>
         </div>
 
-        <p className="project-links">
-      <a href="https://plunia.fr" target="_blank" rel="noopener noreferrer">Visit the Plunia website ↗</a>
-        </p>
 
         <div className="figure"><img src="/interactor.png" alt="Plunia InteractOR" /></div>
-        <p className="figcaption">A product shot, demo still, or logo lockup goes here.</p>
+        <p className="figcaption">A screenshot of the InteractOR software.</p>
 
         <div className="prose">
           <h2 className="h2">What we&apos;re building</h2>
-          <p>[A short paragraph on the product and who it&apos;s for.]</p>
+          <p>[Plunia's InteractOR is a mixed reality software that allows surgeons to consult the patient's preoperative images, using instruments
+            that they already master, and without having to leave the sterile field.
+            You can visit the Plunia website to learn more about the startup and our product .]</p>
+
+
+          <p className="project-links">
+          <a href="https://plunia.com/" target="_blank" rel="noopener noreferrer">Visit the Plunia website ↗</a>
+          </p>
 
           <h2 className="h2">My role</h2>
           <p>
-            As co-founder and CTO, I [lead the technical direction / build the core system /
-            own engineering and the product&apos;s technical roadmap — fill in what&apos;s true].
+            [As co-founder and CTO, I lead the technical direction of Plunia].
           </p>
 
           <h2 className="h2">Where it stands</h2>
