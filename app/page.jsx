@@ -26,66 +26,48 @@ export default function Home() {
         </header>
 
         {/* ---------------- SELECTED WORK ---------------- */}
-        <section className="section work">
-          
+        <section className="section">
           <p className="eyebrow">Selected Work</p>
 
-          {/* Plunia */}
-          <div className="project">
-            <Link href="/plunia" className="media-link">
-              <div className="project-media"><span className="media-label">[ add screenshot ]</span></div>
-            </Link>
-            <div className="project-head">
+          <div className="work-grid">
+            {/* Plunia */}
+            <article className="project">
+              <Link href="/plunia" className="media-link">
+                <div className="project-media"><span className="media-label">[ add image ]</span></div>
+              </Link>
               <Link href="/plunia" className="project-title-link">Plunia</Link>
-              <span className="project-meta">Co-founder &amp; CTO · 2024–present</span>
-            </div>
-            <p className="project-desc">
-              [One line on what Plunia builds — fill this in.] I lead the technical side as co-founder and CTO.
-            </p>
-            <div className="project-links"><Link href="/plunia">View project →</Link></div>
-          </div>
+              <p className="project-meta">Co-founder &amp; CTO · 2024–present</p>
+              <p className="project-desc">[One line on what Plunia builds — fill this in.]</p>
+              <p className="project-links"><Link href="/plunia">View →</Link></p>
+            </article>
 
-          {/* PhD */}
-          <div className="project featured">
-            <Link href="/phd" className="media-link">
-              <div className="project-media"><span className="media-label">[ spectrogram / pipeline ]</span></div>
-            </Link>
-            <div className="project-head">
+            {/* PhD */}
+            <article className="project">
+              <Link href="/phd" className="media-link">
+                <div className="project-media"><span className="media-label">[ spectrogram ]</span></div>
+              </Link>
               <Link href="/phd" className="project-title-link">Voice biomarkers for liver disease</Link>
-              <span className="project-meta">PhD research · 2024–present</span>
-            </div>
-            <p className="project-desc">
-              Detecting minimal hepatic encephalopathy in cirrhotic patients from voice alone.
-              I built the full audio pipeline and an ML baseline reaching 80% accuracy on real clinical recordings.
-            </p>
-            <div className="project-links"><Link href="/phd">View project →</Link></div>
-          </div>
+              <p className="project-meta">PhD research · 2024–present</p>
+              <p className="project-desc">
+                Detecting minimal hepatic encephalopathy from voice alone — full audio pipeline, 80% accuracy.
+              </p>
+              <p className="project-links"><Link href="/phd">View →</Link></p>
+            </article>
 
-          
-
-          
-
-
-          {/* Computer Vision internship */}
-          <div className="project">
-            <Link href="/vision" className="media-link">
-              <div className="project-media"><span className="media-label">[ add screenshot ]</span></div>
-            </Link>
-            <div className="project-head">
+            {/* Computer Vision internship */}
+            <article className="project">
+              <Link href="/vision" className="media-link">
+                <div className="project-media"><span className="media-label">[ add image ]</span></div>
+              </Link>
               <Link href="/vision" className="project-title-link">Bile-duct MRI segmentation</Link>
-              <span className="project-meta">Research internship · 2024</span>
-            </div>
-            <p className="project-desc">
-              A hybrid Residual U-Net reaching 0.98 Dice on MRI. I built a 689-image annotated dataset
-              and a 3D Slicer extension that cut out manual contour validation.
-            </p>
-            <div className="project-links"><Link href="/vision">View project →</Link></div>
+              <p className="project-meta">Research internship · 2024</p>
+              <p className="project-desc">
+                Hybrid Residual U-Net at 0.98 Dice, a 689-image dataset, and a 3D Slicer extension.
+              </p>
+              <p className="project-links"><Link href="/vision">View →</Link></p>
+            </article>
           </div>
-          
         </section>
-
-
-
 
         {/* ---------------- ABOUT ---------------- */}
         <section className="section about">
