@@ -19,16 +19,41 @@
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; background: var(--bg); }
 
+/* ============================================================
+   SITE HEADER (shows on every page, from layout.tsx)
+   ============================================================ */
+.site-header {
+  position: sticky; top: 0; z-index: 50;
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line);
+}
+.site-header-inner {
+  max-width: 880px; margin: 0 auto; padding: 15px 28px;
+  display: flex; align-items: center; justify-content: space-between;
+  font-family: "EB Garamond", Georgia, serif;
+}
+.brand {
+  font-family: "The Seasons", "Playfair Display", Georgia, serif;
+  font-size: 22px; color: var(--ink); text-decoration: none;
+}
+.brand:hover { color: var(--accent); }
+.site-nav { display: flex; gap: 26px; }
+.site-nav a {
+  color: var(--ink); text-decoration: none; font-size: 16px; letter-spacing: .02em;
+  transition: color .15s ease;
+}
+.site-nav a:hover { color: var(--accent); }
+
 .portfolio {
   background: var(--bg);
   color: var(--ink);
   font-family: "EB Garamond", Georgia, serif;
   font-size: 18px;
   line-height: 1.65;
-  min-height: 100vh;
   -webkit-font-smoothing: antialiased;
 }
-.wrap { max-width: 880px; margin: 0 auto; padding: 96px 28px 96px; }
+.wrap { max-width: 880px; margin: 0 auto; padding: 56px 28px 96px; }
 
 /* ---- display type ---- */
 .portfolio h1 {
@@ -47,7 +72,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); }
 .intro { font-size: 22px; max-width: 52ch; margin: 0 0 34px; }
 .swipe { background: linear-gradient(transparent 60%, color-mix(in srgb, var(--soft) 60%, transparent) 60%); padding: 0 3px; }
 
-/* ---- links ---- */
+/* ---- links (inside content) ---- */
 .portfolio a {
   color: var(--accent); text-decoration: none;
   border-bottom: 1px solid color-mix(in srgb, var(--accent) 40%, transparent);
@@ -66,7 +91,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); }
 }
 
 /* ============================================================
-   WORK GRID — three projects side by side (this is the horizontal part)
+   WORK GRID — three projects side by side
    ============================================================ */
 .work-grid {
   display: grid;
@@ -100,9 +125,17 @@ html, body { margin: 0; padding: 0; background: var(--bg); }
 .project-desc { font-size: 16px; margin: 0 0 12px; }
 .project-links { font-size: 16px; margin: auto 0 0; }
 
-/* ---- about ---- */
+/* ---- about / bio page ---- */
 .about p { max-width: 64ch; margin: 0 0 14px; }
 .about .meta-line { color: var(--muted); font-size: 16px; }
+.cv-list { list-style: none; padding: 0; margin: 0 0 8px; }
+.cv-list li {
+  display: flex; justify-content: space-between; gap: 16px;
+  padding: 11px 0; border-bottom: 1px solid var(--line); font-size: 17px;
+}
+.cv-year { color: var(--muted); white-space: nowrap; }
+.tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 8px; }
+.tag { border: 1px solid var(--line); background: var(--card); border-radius: 999px; padding: 5px 13px; font-size: 14px; color: var(--ink); }
 
 /* ---- footer ---- */
 .footer {
@@ -115,7 +148,7 @@ html, body { margin: 0; padding: 0; background: var(--bg); }
 /* ============================================================
    DETAIL / PROJECT PAGES
    ============================================================ */
-.back { display: inline-block; font-size: 15px; letter-spacing: .03em; margin-bottom: 44px; }
+.back { display: inline-block; font-size: 15px; letter-spacing: .03em; margin-bottom: 36px; }
 .lead { font-size: 24px; max-width: 56ch; margin: 0 0 22px; }
 .meta-row { display: flex; flex-wrap: wrap; gap: 6px 22px; color: var(--muted); font-size: 15px; margin-bottom: 40px; }
 .meta-row span { white-space: nowrap; }
@@ -154,4 +187,4 @@ html, body { margin: 0; padding: 0; background: var(--bg); }
 @keyframes rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
 @media (prefers-reduced-motion: reduce) { .portfolio .wrap > * { animation: none; } }
 
-@media (max-width: 600px) { .wrap { padding-top: 72px; } }
+@media (max-width: 600px) { .wrap { padding-top: 44px; } }

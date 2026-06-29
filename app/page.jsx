@@ -69,21 +69,6 @@ export default function Home() {
           </div>
         </section>
 
-        {/* ---------------- ABOUT ---------------- */}
-        <section className="section about">
-          <p className="eyebrow">About</p>
-          <p>
-            I&apos;m a PhD researcher at Sorbonne University (ISIR) working on speech and audio
-            machine learning for healthcare, with a background in robotics engineering. I move
-            between research and building — from clinical ML pipelines to a deeptech startup.
-          </p>
-          <p className="meta-line">
-            Currently PhD in AI for Health, Sorbonne / ISIR. Previously MSc Robotics &amp; Intelligent
-            Systems (Sorbonne, with honors) and Robotics Engineering at Polytech Sorbonne.
-            Training: OxML 2025 (Oxford), NLP &amp; AI Summer School (Rabat).
-          </p>
-        </section>
-
         {/* ---------------- FOOTER ---------------- */}
         <footer className="footer">
           <span>
