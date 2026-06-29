@@ -22,6 +22,10 @@ export default function Plunia() {
           <span>[Core tech / stack]</span>
         </div>
 
+        <p className="project-links">
+      <a href="https://plunia.fr" target="_blank" rel="noopener noreferrer">Visit the Plunia website ↗</a>
+        </p>
+
         <div className="figure"><img src="/interactor.png" alt="Plunia InteractOR" /></div>
         <p className="figcaption">A product shot, demo still, or logo lockup goes here.</p>
 
