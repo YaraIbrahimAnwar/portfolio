@@ -6,7 +6,7 @@ export default function About() {
     <main className="portfolio">
       <div className="wrap">
         <p className="eyebrow">About</p>
-        <h1>Yara Ibrahim Anwar Ahmed</h1>
+        <h1>Yara Ibrahim</h1>
         <p className="lead">
           PhD researcher and engineer working where machine learning meets healthcare —
           speech, audio, and medical imaging.
