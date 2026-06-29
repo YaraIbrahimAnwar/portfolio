@@ -33,7 +33,7 @@ export default function Plunia() {
 
  
           <p className="project-links">
-          <a href="https://plunia.com/" target="_blank" rel="noopener noreferrer">Visit the Plunia website ↗</a>
+          <a href="https://plunia.fr/" target="_blank" rel="noopener noreferrer">Visit the Plunia website ↗</a>
           </p>
 
           <h2 className="h2">My role</h2>
